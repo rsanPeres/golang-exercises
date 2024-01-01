@@ -56,7 +56,7 @@ func BuscaCep(cep string) (*ViaCEP, error) {
 		return nil, error
 	}
 	var city ViaCEP
-	error = json.Unmarshal(body, &cep)
+	error = json.Unmarshal(body, &city)
 	if error != nil {
 		return nil, error
 	}
